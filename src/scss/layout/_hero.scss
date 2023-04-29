@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__line {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.hero__container {
+  max-width: 50%;
+  flex: 1 1 50%;
+  min-height: 791px;
+
+  @include background;
+
+  @include tablet {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  @include phone {
+    min-height: 550px;
+  }
+}
+
+.hero__container--background {
+  background-color: $light_yellow;
+}
+
+.hero__text {
+  position: relative;
+  max-width: 471px;
+  margin: 0 114px 0 auto;
+  z-index: 10;
+  padding: 168px 20px 0 20px;
+
+  @include tablet {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @include phone {
+    padding: 100px 20px 0 20px;
+  }
+}
+
+.hero__tittle-above {
+  margin-bottom: 29px;
+}
+
+.hero__tittle {
+  font-family: $ultra;
+  font-size: 70px;
+  line-height: 80px;
+  margin-bottom: 27px;
+  letter-spacing: 1.4px;
+
+  @include phone {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 15px;
+  }
+}
+
+.hero__lines {
+  line-height: 27px;
+  font-size: 18px;
+
+  @include phone {
+    line-height: 27px;
+    font-size: 18px;
+  }
+}
+
+.hero__decoration,
+.hero__text-decoration {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero__decoration {
+  max-width: 188px;
+  max-height: 308px;
+  left: 0;
+  top: 15px;
+}
+
+.hero__text-decoration {
+  top: 201px;
+  right: 145px;
+  max-width: 60px;
+  max-height: 65px;
+
+  @include phone {
+    top: 149px;
+    right: 30px;
+  }
+}

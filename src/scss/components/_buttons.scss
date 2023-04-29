@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  color: $white;
+  background-color: $black;
+  text-transform: uppercase;
+  padding: 15px 42px;
+  text-decoration: none;
+
+  @include hover {
+    transition: $normal;
+    background-color: $deep_yellow;
+    color: $black;
+  }
+}
+
+.header__button {
+  @include phone {
+    display: none;
+  }
+}
+
+.navigation__list-item--responsive {
+  display: none;
+  @include phone {
+    display: inline-block;
+  }
+}
+
+//Add this class letter at HTML!
+.header__close-button {
+  display: none;
+
+  @include phone {
+    display: block;
+  }
+}

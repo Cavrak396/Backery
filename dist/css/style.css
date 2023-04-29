@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../text-fonts/Oswald-Regular.woff2") format("woff2"), url("../text-fonts/Oswald-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Ultra";
+  src: url("../text-fonts/Ultra-Regular.woff2") format("woff2"), url("../text-fonts/Ultra-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../text-fonts/DMSans-Regular.woff2") format("woff2"), url("../text-fonts/DMSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../text-fonts/DMSans-Medium.woff2") format("woff2"), url("../text-fonts/DMSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../text-fonts/DMSans-Bold.woff2") format("woff2"), url("../text-fonts/DMSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+p {
+  font-family: "DM Sans"; }
+
+.h2 {
+  font-family: "Ultra"; }
+
+.btn {
+  font-family: "Oswald"; }
+
+.above {
+  display: block;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.wrap {
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.wrap--primary {
+  max-width: 1210px; }
+
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 15px 42px;
+  text-decoration: none; }
+  .btn:hover {
+    transition: 0.4s all ease-in-out;
+    background-color: #f9bf77;
+    color: black; }
+
+@media screen and (max-width: 767px) {
+  .header__button {
+    display: none; } }
+
+.navigation__list-item--responsive {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .navigation__list-item--responsive {
+      display: inline-block; } }
+
+.header__close-button {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .header__close-button {
+      display: block; } }
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: white; }
+
+.header__line {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0 27px 0; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 8px; }
+
+.navigation__list {
+  display: flex; }
+  @media screen and (max-width: 767px) {
+    .navigation__list {
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      width: 100%;
+      top: 0;
+      left: -100%;
+      transition: 0.4s all ease-in-out;
+      height: 100vh;
+      z-index: 20; } }
+
+.navigation__logo-link {
+  display: block;
+  max-width: 106px;
+  flex: 1 1 106px;
+  max-height: 30px;
+  margin-right: 73px; }
+  .navigation__logo-link:hover {
+    transition: 0.4s all ease-in-out;
+    opacity: 0.7; }
+
+.navigation__logo {
+  max-width: 100%; }
+
+.navigation__list-item {
+  margin-right: 59px; }
+  @media screen and (max-width: 767px) {
+    .navigation__list-item {
+      margin: 0 0 40px 0; } }
+
+.navigation__list-item--responsive {
+  display: none; }
+
+.navigation__list-link {
+  font-family: "DM Sans";
+  text-decoration: none;
+  color: black; }
+  .navigation__list-link:hover {
+    transition: 0.4s all ease-in-out;
+    color: #f9bf77; }
+  @media screen and (max-width: 767px) {
+    .navigation__list-link {
+      font-size: 27px; } }
+
+.header__hamburger {
+  display: none;
+  border: none; }
+  @media screen and (max-width: 767px) {
+    .header__hamburger {
+      display: block; } }
+
+.header__hambuger-bar,
+.header__close-bar {
+  display: block;
+  background: none;
+  width: 25px;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 5px; }
+
+.active {
+  left: 0; }
+
+.hero {
+  position: relative;
+  z-index: 1; }
+
+.hero__line {
+  display: flex; }
+  @media screen and (max-width: 1200px) {
+    .hero__line {
+      flex-direction: column; } }
+
+.hero__container {
+  max-width: 50%;
+  flex: 1 1 50%;
+  min-height: 791px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 1200px) {
+    .hero__container {
+      max-width: 100%;
+      flex: 1 1 100%; } }
+  @media screen and (max-width: 767px) {
+    .hero__container {
+      min-height: 550px; } }
+
+.hero__container--background {
+  background-color: rgba(231, 212, 190, 0.44); }
+
+.hero__text {
+  position: relative;
+  max-width: 471px;
+  margin: 0 114px 0 auto;
+  z-index: 10;
+  padding: 168px 20px 0 20px; }
+  @media screen and (max-width: 1200px) {
+    .hero__text {
+      text-align: center;
+      margin: 0 auto; } }
+  @media screen and (max-width: 767px) {
+    .hero__text {
+      padding: 100px 20px 0 20px; } }
+
+.hero__tittle-above {
+  margin-bottom: 29px; }
+
+.hero__tittle {
+  font-family: "Ultra";
+  font-size: 70px;
+  line-height: 80px;
+  margin-bottom: 27px;
+  letter-spacing: 1.4px; }
+  @media screen and (max-width: 767px) {
+    .hero__tittle {
+      font-size: 50px;
+      line-height: 55px;
+      margin-bottom: 15px; } }
+
+.hero__lines {
+  line-height: 27px;
+  font-size: 18px; }
+  @media screen and (max-width: 767px) {
+    .hero__lines {
+      line-height: 27px;
+      font-size: 18px; } }
+
+.hero__decoration,
+.hero__text-decoration {
+  position: absolute;
+  z-index: 1; }
+
+.hero__decoration {
+  max-width: 188px;
+  max-height: 308px;
+  left: 0;
+  top: 15px; }
+
+.hero__text-decoration {
+  top: 201px;
+  right: 145px;
+  max-width: 60px;
+  max-height: 65px; }
+  @media screen and (max-width: 767px) {
+    .hero__text-decoration {
+      top: 149px;
+      right: 30px; } }
