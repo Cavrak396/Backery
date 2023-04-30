@@ -34,7 +34,7 @@
 
 .hero__text {
   position: relative;
-  max-width: 471px;
+  max-width: 491px;
   margin: 0 114px 0 auto;
   z-index: 10;
   padding: 168px 20px 0 20px;
@@ -57,7 +57,7 @@
   font-family: $ultra;
   font-size: 70px;
   line-height: 80px;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   letter-spacing: 1.4px;
 
   @include phone {
@@ -68,8 +68,8 @@
 }
 
 .hero__lines {
-  line-height: 27px;
-  font-size: 18px;
+  line-height: 30px;
+  font-size: 20px;
 
   @include phone {
     line-height: 27px;

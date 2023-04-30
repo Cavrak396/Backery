@@ -1,0 +1,116 @@
+.features__join-text {
+  text-align: center;
+  margin-bottom: 51px;
+
+  @include phone {
+    margin-bottom: 15px;
+  }
+}
+
+.features__tittle-above {
+  margin-bottom: 27px;
+
+  @include phone {
+    margin-bottom: 18px;
+  }
+}
+
+.features__cards-line {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.features__card {
+  position: relative;
+  margin: 0 10px;
+  max-width: calc(33.33% - 20px);
+  flex: 1 1 calc(33.33% - 20px);
+  text-decoration: none;
+  transition: $normal;
+
+  @include hover {
+    background-color: $deep_yellow;
+    transform: scale(1.05);
+
+    .features__card-img {
+      filter: brightness(0) invert(1);
+    }
+
+    .features__card-hidden {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @include tablet {
+    max-width: calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px);
+    margin: 0 5px 10px 0;
+  }
+
+  @include phone {
+    max-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
+.features__card-inner {
+  padding: 71px 0 68px 64px;
+
+  @include phone {
+    padding: 40px 0 40px 0;
+  }
+}
+
+.features__card-img {
+  max-width: 102px;
+  max-height: 87px;
+  margin-bottom: 61px;
+  transition: $normal;
+
+  @include phone {
+    margin-bottom: 32px;
+  }
+}
+
+.features__card-hidden {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  max-width: 180px;
+  max-height: 185px;
+  transition: $normal;
+  top: 0;
+  right: 0;
+
+  @include phone {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+
+.features__card-tittle {
+  font-family: $ultra;
+  color: $black;
+  font-size: 40px;
+  margin-bottom: 21px;
+
+  @include phone {
+    font-size: 33px;
+  }
+}
+
+.features__card-lines {
+  line-height: 32px;
+  max-width: 307px;
+  color: $light_black;
+
+  @include phone {
+    margin: 0 auto;
+    line-height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+  }
+}

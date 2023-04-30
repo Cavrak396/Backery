@@ -15,4 +15,18 @@ p {
   font-family: $oswald;
   text-transform: uppercase;
   letter-spacing: 3px;
+
+  @include phone {
+    font-family: 15px;
+  }
+}
+
+.h2 {
+  font-size: 56px;
+  line-height: 64px;
+
+  @include phone {
+    font-size: 38px;
+    line-height: 49px;
+  }
 }
