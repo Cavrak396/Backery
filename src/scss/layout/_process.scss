@@ -1,0 +1,309 @@
+.process {
+  background-color: $quality_black;
+  padding: 113px 0 161px 0;
+}
+
+.process__join-text {
+  color: $white;
+  text-align: center;
+  margin-bottom: 68px;
+}
+
+.process__tittle-above,
+.process__recipe-above {
+  margin-bottom: 27px;
+}
+
+.process__work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 193px;
+
+  @include phone {
+    margin-bottom: 70px;
+  }
+}
+
+.process__work-card {
+  background-color: $white;
+  max-width: 25%;
+  flex: 1 1 25%;
+
+  @include hover {
+    transition: $normal;
+    background-color: $orange;
+    transform: scale(1.03);
+
+    .process__hidden-image {
+      transition: $normal;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @include tablet {
+    max-width: 50%;
+    flex: 1 1 50%;
+    text-align: center;
+  }
+
+  @include phone {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+.process__work-link {
+  text-decoration: none;
+  color: $black;
+}
+
+.process__work-inner {
+  position: relative;
+  padding: 49px 0 53px 35px;
+
+  @include phone {
+    padding: 30px 0 30px 0px;
+  }
+}
+
+.process__hidden-image {
+  position: absolute;
+  visibility: hidden;
+  max-width: 158px;
+  max-height: 147px;
+  opacity: 0;
+  top: 0;
+  right: 0;
+
+  @include phone {
+    max-width: 95px;
+    max-height: 88px;
+  }
+}
+
+.process__work-number {
+  font-family: $oswald;
+  margin-bottom: 109px;
+
+  @include phone {
+    margin-bottom: 43px;
+  }
+}
+
+.process__work-tittle {
+  font-family: $ultra;
+  font-size: 40px;
+  margin-bottom: 21px;
+
+  @include phone {
+    font-size: 37px;
+  }
+}
+
+.process__work-text {
+  line-height: 32px;
+  color: $light_black;
+  max-width: 207px;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+
+.process__recipe-join {
+  color: $white;
+  max-width: 617px;
+  margin-bottom: 68px;
+
+  @include tablet {
+    text-align: center;
+    margin: 0 auto 68px auto;
+  }
+}
+
+.process__recipe-tittle {
+  @include phone {
+    font-size: 31px;
+    line-height: 42px;
+  }
+}
+
+.process__recipe-inline {
+  display: flex;
+  align-items: start;
+  margin: 0 -20px;
+
+  @include tablet {
+    align-items: normal;
+    flex-direction: column;
+  }
+}
+
+.process__recipe-cards {
+  margin: 0 20px;
+  max-width: calc(50% - 40px);
+  flex: 1 1 calc(50% - 40px);
+
+  @include tablet {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+.process__recipe-cards--small {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px 33px -10px;
+
+  @include tablet {
+    margin: 0 10px 33px 10px;
+  }
+}
+
+.process__recipe-card--small {
+  margin: 0 10px 31px 10px;
+  max-width: calc(50% - 20px);
+  flex: 1 1 calc(50% - 20px);
+}
+
+.process__recipe-card {
+  background-color: $white;
+
+  @include hover {
+    transition: $normal;
+    transform: scale(1.03);
+  }
+}
+
+.process__recipe-card--large {
+  margin-bottom: 20px;
+}
+
+.process__recipe-link {
+  text-decoration: none;
+  color: $black;
+}
+
+.process__recipe-top {
+  @include background;
+}
+
+.process__recipe-top--large {
+  min-height: 496px;
+
+  @include phone {
+    min-height: 249px;
+  }
+}
+
+.process__recipe-top--small {
+  min-height: 208px;
+
+  @include background;
+
+  @include phone {
+    min-height: 128px;
+  }
+}
+
+.process__recipe-bottom--large {
+  padding: 33px 63px 37px 48px;
+
+  @include phone {
+    padding: 33px 20px 37px 20px;
+  }
+}
+
+.process__recipe-bottom--small {
+  padding: 18px 10px 23px 20px;
+}
+
+.process__name-above {
+  margin-bottom: 29px;
+
+  @include tablet {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+}
+
+.process__name-above--small {
+  font-family: $dmSans;
+}
+
+.process__recipe-name--large {
+  font-size: 40px;
+  font-family: $ultra;
+  margin-bottom: 21px;
+
+  @include phone {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+}
+
+.process__recipe-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include phone {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+
+.process__recipe-line--small {
+  margin-bottom: 23px;
+
+  @include phone {
+    margin-bottom: 11px;
+  }
+}
+
+.process__recipe-text {
+  line-height: 32px;
+  max-width: 323px;
+
+  @include phone {
+    margin-bottom: 20px;
+  }
+}
+
+.process__recipe-time {
+  font-family: $oswald;
+
+  @include phone {
+    font-size: 13px;
+  }
+}
+
+.process__recipe-time--large {
+  font-size: 24px;
+}
+
+.process__name-above--small {
+  margin-bottom: 0;
+  color: $light_black;
+
+  @include phone {
+    margin-bottom: 5px;
+  }
+}
+
+.process__recipe-name--small {
+  font-family: $dmSans;
+  font-size: 20px;
+  max-width: 203px;
+  line-height: 32px;
+
+  @include phone {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.process__button-holder {
+  text-align: center;
+}

@@ -1,0 +1,130 @@
+.products {
+  padding: 111px 0 112px 0;
+}
+
+.products__join-text {
+  max-width: 649px;
+  margin-bottom: 68px;
+}
+
+.products__tittle-above {
+  margin-bottom: 27px;
+}
+
+.products__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px 40px -10px;
+}
+
+.products__cards-card {
+  margin: 0 10px 27px 10px;
+  max-width: calc(33.33% - 20px);
+  flex: 1 1 calc(33.33% - 20px);
+  box-shadow: 0px 10px 20px $light_black, 0px 6px 6px $light_black;
+  transition: $normal;
+
+  @include background;
+
+  @include hover {
+    transform: scale(1.03);
+  }
+
+  @include tablet {
+    max-width: calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  @include phone {
+    max-width: calc(100% - 20px);
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+
+.products__cards-card--large {
+  max-width: calc(66.67% - 20px);
+  flex: 1 1 calc(66.67% - 20px);
+
+  @include tablet {
+    max-width: calc(50% - 20px);
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  @include phone {
+    max-width: calc(100% - 20px);
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+
+.products__card-link {
+  text-decoration: none;
+  color: $black;
+}
+
+.products__card-link--large {
+  color: $white;
+}
+
+.products__card-inner {
+  padding: 193px 48px 38px 48px;
+
+  @include phone {
+    padding: 193px 48px 38px 21px;
+  }
+}
+
+.products__card-top {
+  min-height: 304px;
+
+  @include background;
+}
+
+.products__card-bottom {
+  padding: 33px 30px 33px 39px;
+}
+
+.products__card-subtitle {
+  margin-bottom: 10px;
+}
+
+.products__card-subtitle--large {
+  margin-bottom: 25px;
+}
+
+.products__card-tittle {
+  font-size: 24px;
+  font-family: $oswald;
+}
+
+.products__card-tittle--large {
+  font-size: 40px;
+  line-height: 48px;
+  max-width: 442px;
+  margin-bottom: 18px;
+  font-family: $ultra;
+}
+
+.products__card-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__card-text {
+  max-width: 323px;
+  line-height: 31px;
+
+  @include phone {
+    line-height: 26px;
+  }
+}
+
+.products__card-price {
+  font-size: 40px;
+  font-family: $ultra;
+  padding-top: 13px;
+}
+
+.products__explore-holder {
+  text-align: center;
+}

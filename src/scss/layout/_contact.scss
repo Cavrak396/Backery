@@ -1,0 +1,174 @@
+.contact {
+  padding: 100px 0;
+
+  @include tablet {
+    padding: 30px 0;
+  }
+}
+
+.contact__line {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+}
+
+.contact__container {
+  position: relative;
+  max-width: 50%;
+  flex: 1 1 50%;
+  min-height: 550px;
+
+  @include tablet {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 80px;
+  }
+
+  @include phone {
+    min-height: 320px;
+  }
+}
+
+.contact__shape,
+.contact__image {
+  position: absolute;
+}
+
+.contact__shape {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  max-width: 500px;
+  max-height: 547px;
+
+  @include tablet {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include phone {
+    max-width: 271px;
+    max-height: 293px;
+  }
+}
+
+.contact__image {
+  left: 85px;
+  top: 28px;
+  z-index: 10;
+  max-width: 375px;
+  max-height: 500px;
+
+  @include tablet {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include phone {
+    max-width: 190px;
+    max-height: 253px;
+  }
+}
+
+.contact__text {
+  padding-top: 65px;
+  margin-bottom: 65px;
+
+  @include tablet {
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+.contact__tittle-above {
+  margin-bottom: 25px;
+}
+
+.contact__tittle {
+  max-width: 454px;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+
+.contact__information {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.contact__information-holder {
+  display: flex;
+  max-width: 50%;
+  flex: 1 1 50%;
+
+  @include tablet {
+    max-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 75px;
+    align-items: center;
+  }
+}
+
+.contact__tag-image {
+  max-width: 20%;
+  flex: 1 1 20%;
+}
+
+.contact__location,
+.contact__phone {
+  max-width: 16px;
+  max-height: 24px;
+  filter: brightness(0);
+}
+
+.contact__serial-number,
+.contact__information-tag {
+  font-family: $oswald;
+}
+
+.contact__serial-number {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.contact__information-tag {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.contact__information-text {
+  max-width: 80%;
+  flex: 1 1 80%;
+}
+
+.contact__address-link,
+.contact__phone-link {
+  display: block;
+  color: $light_black;
+  text-decoration: none;
+  font-family: $dmSans;
+  font-size: 18px;
+
+  @include hover {
+    color: $deep_yellow;
+    transition: $normal;
+  }
+
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+
+.contact__address-link {
+  max-width: 245px;
+  line-height: 25px;
+}
+
+.contact__button-holder {
+  text-align: center;
+}

@@ -37,6 +37,10 @@
                         <li class="navigation__list-item navigation__list-item--responsive button">
                             <a href="javascript:;" class="header__button btn">Contact</a>
                         </li>
+                        <li class="navigation__list-item">
+                            <a href="javascript:;"
+                                class="navigation__list-link navigation__list-link--close js-nav-btn">Close</a>
+                        </li>
                     </ul>
                 </nav>
                 <a href="javascript:;" class="header__button btn">Contact</a>
@@ -57,9 +61,7 @@
                             Sience 1984
                         </span>
                         <h1 class="hero__tittle">
-                            Fresh
-                            Bakery
-                            Every Day
+                            Fresh Bakery Every Day
                         </h1>
                         <p class="hero__lines">
                             Even the all-powerful Pointing has no control about the blind texts it is an almost.
@@ -90,13 +92,11 @@
                                     <div class="about__slider-buttons">
                                         <button type="button"
                                             class="about__slider-button about__slider-button--up js-btn-up">
-                                            <span class="about__button-bar"></span>
-                                            <span class="about__button-bar"></span>
+                                            Up
                                         </button>
                                         <button type="button"
                                             class="about__slider-button about__slider-button--down js-button-down">
-                                            <span class="about__button-bar"></span>
-                                            <span class="about__button-bar"></span>
+                                            Down
                                         </button>
                                     </div>
                                     <div class="about__slider-holder">
@@ -156,41 +156,532 @@
                     <span class="features__tittle-above above">Our features</span>
                     <h2 class="features__tittle h2">Baked With Love</h2>
                 </div>
-                <div class="features__cards-line">
-                    <a href="javascript:;" class="features__card">
-                        <div class="features__card-inner">
-                            <img src="images/features-first-card.png" alt="card image" class="features__card-img">
-                            <h3 class="features__card-tittle">Fresh</h3>
-                            <p class="features__card-lines">Nothing the copy said could convince her and so it didn’t
-                                take long.
-                            </p>
-                            <img src="images/features-hover-card.png" alt="hidden photo" class="features__card-hidden">
+                <ul class="features__cards-list">
+                    <li class="features__cards-item">
+                        <a href="javascript:;" class="features__card">
+                            <div class="features__card-inner">
+                                <img src="images/features-first-card.png" alt="card image" class="features__card-img">
+                                <h3 class="features__card-tittle">Fresh</h3>
+                                <p class="features__card-lines">Nothing the copy said could convince her and so it
+                                    didn't take long.
+                                </p>
+                                <img src="images/features-hover-card.png" alt="hidden photo"
+                                    class="features__card-hidden">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="features__cards-item">
+                        <a href="javascript:;" class="features__card">
+                            <div class="features__card-inner">
+                                <img src="images/features-second-card.png" alt="card image" class="features__card-img">
+                                <h3 class="features__card-tittle">Natural</h3>
+                                <p class="features__card-lines">Copy Writers ambushed her, made her drunk with Longe and
+                                    Parole.
+                                </p>
+                                <img src="images/features-hover-card.png" alt="hidden photo"
+                                    class="features__card-hidden">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="features__cards-item">
+                        <a href="javascript:;" class="features__card">
+                            <div class="features__card-inner">
+                                <img src="images/features-first-card.png" alt="card image" class="features__card-img">
+                                <h3 class="features__card-tittle">Tasty</h3>
+                                <p class="features__card-lines">And if she hasn't been rewritten, then they are still
+                                    using her.
+                                </p>
+                                <img src="images/features-hover-card.png" alt="hidden photo"
+                                    class="features__card-hidden">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="features__presentation" style="background-image: url(images/features-bg.jpg);">
+                <div class="wrap wrap--primary">
+                    <div class="features__presentation-line">
+                        <div class="features__presentation-container features__presentation-container--edit">
+                            <button type="button" class="features__play-button js-video-play">
+                                <img src="images/features-play.png" alt="play button" class="features__play-img">
+                            </button>
                         </div>
-                    </a>
-                    <a href="javascript:;" class="features__card">
-                        <div class="features__card-inner">
-                            <img src="images/features-second-card.png" alt="card image" class="features__card-img">
-                            <h3 class="features__card-tittle">Natural</h3>
-                            <p class="features__card-lines">Copy Writers ambushed her, made her drunk with Longe and
-                                Parole.
-                            </p>
-                            <img src="images/features-hover-card.png" alt="hidden photo" class="features__card-hidden">
+                        <div class="features__presentation-container">
+                            <div class="features__presentation-text">
+                                <span class="features__presentation-above above">Our Video</span>
+                                <h2 class="features__presentation-tittle h2">Story Behind Every Piece</h2>
+                            </div>
                         </div>
-                    </a>
-                    <a href="javascript:;" class="features__card">
-                        <div class="features__card-inner">
-                            <img src="images/features-first-card.png" alt="card image" class="features__card-img">
-                            <h3 class="features__card-tittle">Tasty</h3>
-                            <p class="features__card-lines">And if she hasn't been rewritten, then they are still using
-                                her.
+                    </div>
+                </div>
+            </div>
+            <div class="features__presentation-video js-video">
+                <button type="button" class="features__close-button js-video-close">
+                    <span class="features__close-bar"></span>
+                    <span class="features__close-bar"></span>
+                </button>
+                <video controls autoplay muted src="images/features-vide.mp4" class="features__video"></video>
+            </div>
+        </section>
+        <section class="products">
+            <div class="wrap wrap--primary">
+                <div class="products__join-text">
+                    <span class="products__tittle-above above">Our Products</span>
+                    <h2 class="products__tittle h2">
+                        Baked Fresh Every Morning
+                    </h2>
+                </div>
+                <ul class="products__cards">
+                    <li class="products__cards-card products__cards-card--large"
+                        style="background-image: url(images/products-homemade.png);">
+                        <a href="javascript:;" class="products__card-link products__card-link--large">
+                            <div class="products__card-inner">
+                                <span class="products__card-subtitle products__card-subtitle--large above">Bakery</span>
+                                <h3 class="products__card-tittle products__card-tittle--large">Homemade Bread</h3>
+                                <div class="products__card-line">
+                                    <p class="products__card-text">
+                                        Flows by their place and supplies it with the necessary regelialia.
+                                    </p>
+                                    <span class="products__card-price">$9</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products__cards-card">
+                        <a href="javascript:;" class="products__card-link">
+                            <div class="products__card-top"
+                                style="background-image: url(images/products-card-second.png);"></div>
+                            <div class="products__card-bottom">
+                                <span class="products__card-subtitle above">Bakery</span>
+                                <div class="products__card-line">
+                                    <h3 class="products__card-tittle">
+                                        Bread
+                                    </h3>
+                                    <span class="products__card-price">$5</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products__cards-card">
+                        <a href="javascript:;" class="products__card-link">
+                            <div class="products__card-top"
+                                style="background-image: url(images/products-card-third.png);"></div>
+                            <div class="products__card-bottom">
+                                <span class="products__card-subtitle above">Pastry</span>
+                                <div class="products__card-line">
+                                    <h3 class="products__card-tittle products__card-tittle--small">
+                                        Cupcake
+                                    </h3>
+                                    <span class="products__card-price">$3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products__cards-card">
+                        <a href="javascript:;" class="products__card-link">
+                            <div class="products__card-top"
+                                style="background-image: url(images/products-card-fourth.png);"></div>
+                            <div class="products__card-bottom">
+                                <span class="products__card-subtitle above">Sweet</span>
+                                <div class="products__card-line">
+                                    <h3 class="products__card-tittle products__card-tittle--small">
+                                        Biscuits
+                                    </h3>
+                                    <span class="products__card-price">$2</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="products__cards-card">
+                        <a href="javascript:;" class="products__card-link">
+                            <div class="products__card-top"
+                                style="background-image: url(images/products-card-fifth.png);"></div>
+                            <div class="products__card-bottom">
+                                <span class="products__card-subtitle above">Pastry</span>
+                                <div class="products__card-line">
+                                    <h3 class="products__card-tittle products__card-tittle--small">
+                                        Brioche
+                                    </h3>
+                                    <span class="products__card-price">$5</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="products__explore-holder">
+                    <a href="javascript:;" class="products__explore-button btn btn--empty">Explore</a>
+                </div>
+            </div>
+        </section>
+        <section class="process">
+            <div class="wrap wrap--primary">
+                <div class="process__join-text">
+                    <span class="process__tittle-above above">Our Process</span>
+                    <h2 class="process__tittle h2">How We Work</h2>
+                </div>
+                <ul class="process__work-cards">
+                    <li class="process__work-card">
+                        <a href="javascript:;" class="process__work-link">
+                            <div class="process__work-inner">
+                                <img src="images/process-work-image.png" alt="hidden breed image"
+                                    class="process__hidden-image">
+                                <span class="process__work-number">01</span>
+                                <h3 class="process__work-tittle">Contact</h3>
+                                <p class="process__work-text">
+                                    Nothing the copy said could convince her and so it didn't take long.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="process__work-card">
+                        <a href="javascript:;" class="process__work-link">
+                            <div class="process__work-inner">
+                                <img src="images/process-work-image.png" alt="hidden breed image"
+                                    class="process__hidden-image">
+                                <span class="process__work-number">02</span>
+                                <h3 class="process__work-tittle">Baking</h3>
+                                <p class="process__work-text">
+                                    The copy said could convince her and so it didn't take long.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="process__work-card">
+                        <a href="javascript:;" class="process__work-link">
+                            <div class="process__work-inner">
+                                <img src="images/process-work-image.png" alt="hidden breed image"
+                                    class="process__hidden-image">
+                                <span class="process__work-number">03</span>
+                                <h3 class="process__work-tittle">Delivery</h3>
+                                <p class="process__work-text">
+                                    Nothing the copy said could convince her and so it didn;t take.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="process__work-card">
+                        <a href="javascript:;" class="process__work-link">
+                            <div class="process__work-inner">
+                                <img src="images/process-work-image.png" alt="hidden breed image"
+                                    class="process__hidden-image">
+                                <span class="process__work-number">04</span>
+                                <h3 class="process__work-tittle">Tasty</h3>
+                                <p class="process__work-text">
+                                    Copy said could convince her and so it didn't take long.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="process__recipe">
+                    <div class="process__recipe-join">
+                        <span class="process__recipe-above above">Our Recipes</span>
+                        <h2 class="process__recipe-tittle h2">
+                            Explore Sweet & Delicious Recipes
+                        </h2>
+                    </div>
+                </div>
+                <div class="process__recipe-inline">
+                    <ul class="process__recipe-cards">
+                        <li class="process__recipe-card process__recipe-card--large">
+                            <a href="javascript:;" class="process__recipe-link">
+                                <div class="process__recipe-top process__recipe-top--large"
+                                    style="background-image: url(images/process-card-large.png);"></div>
+                                <div class="process__recipe-bottom process__recipe-bottom--large">
+                                    <span class="process__name-above above">Bakery</span>
+                                    <h3 class="process__recipe-name process__recipe-name--large">Delicious Bread</h3>
+                                    <div class="process__recipe-line">
+                                        <p class="process__recipe-text">
+                                            Flows by their place and supplies it with the necessary regelialia.
+                                        </p>
+                                        <span class="process__recipe-time process__recipe-time--large">5 min</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="process__recipe-cards process__recipe-cards--small">
+                        <li class="process__recipe-card process__recipe-card--small">
+                            <a href="javascript:;" class="process__recipe-link">
+                                <div class="process__recipe-top--small"
+                                    style="background-image: url(images/process-small-first.png);"></div>
+                                <div class="process__recipe-bottom process__recipe-bottom--small">
+                                    <div class="process__recipe-line process__recipe-line--small">
+                                        <span class="process__name-above process__name-above--small">
+                                            Bakery
+                                        </span>
+                                        <span class="process__recipe-time">10 min</span>
+                                    </div>
+                                    <h3 class="process__recipe-name process__recipe-name--small">
+                                        Malted wheat flake bread
+                                    </h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="process__recipe-card process__recipe-card--small">
+                            <a href="javascript:;" class="process__recipe-link">
+                                <div class="process__recipe-top--small"
+                                    style="background-image: url(images/recipe-card-second.png);"></div>
+                                <div class="process__recipe-bottom process__recipe-bottom--small">
+                                    <div class="process__recipe-line process__recipe-line--small">
+                                        <span class="process__name-above process__name-above--small">
+                                            Bakery
+                                        </span>
+                                        <span class="process__recipe-time">7 min</span>
+                                    </div>
+                                    <h3 class="process__recipe-name process__recipe-name--small">
+                                        Malted wheat flake bread
+                                    </h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="process__recipe-card process__recipe-card--small">
+                            <a href="javascript:;" class="process__recipe-link">
+                                <div class="process__recipe-top--small"
+                                    style="background-image: url(images/recipe-card-third.png);"></div>
+                                <div class="process__recipe-bottom process__recipe-bottom--small">
+                                    <div class="process__recipe-line process__recipe-line--small">
+                                        <span class="process__name-above process__name-above--small">
+                                            Bakery
+                                        </span>
+                                        <span class="process__recipe-time">5 min</span>
+                                    </div>
+                                    <h3 class="process__recipe-name process__recipe-name--small">
+                                        Malted wheat flake bread
+                                    </h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="process__recipe-card process__recipe-card--small">
+                            <a href="javascript:;" class="process__recipe-link">
+                                <div class="process__recipe-top--small"
+                                    style="background-image: url(images/recipe-card-fourth.png);"></div>
+                                <div class="process__recipe-bottom process__recipe-bottom--small">
+                                    <div class="process__recipe-line process__recipe-line--small">
+                                        <span class="process__name-above process__name-above--small">
+                                            Bakery
+                                        </span>
+                                        <span class="process__recipe-time">15 min</span>
+                                    </div>
+                                    <h3 class="process__recipe-name process__recipe-name--small">Malted wheat flake
+                                        bread</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="process__button-holder">
+                    <a href="javascript:;" class="process__button btn btn--empty">Explore</a>
+                </div>
+            </div>
+        </section>
+        <section class="impressions">
+            <div class="wrap wrap--primary">
+                <div class="impressions__join-text">
+                    <span class="impressions__tittle-above above">Testimonials</span>
+                    <h2 class="impressions__tittle h2">People Say About Our Bakery</h2>
+                </div>
+                <div class="impressions__slider">
+                    <ul class="impressions__slider-slides js-slides">
+                        <li class="impressions__slider-slide js-impressions-slide">
+                            <div class="impressions__slide-profile">
+                                <img src="images/impressions-stars.png" alt="rating" class="impressions__stars">
+                                <a href="javascript:;" class="impressions__profile-link">
+                                    <img src="images/impressions-first.jpg" alt="profile photo"
+                                        class="impressions__profile-photo">
+                                </a>
+                            </div>
+                            <h3 class="impressions__slide-tag">Very, Very Delicious</h3>
+                            <p class="impressions__slide-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus velit
+                                asperiores quasi nam perspiciatis nesciunt, minus officia itaque minima.
                             </p>
-                            <img src="images/features-hover-card.png" alt="hidden photo" class="features__card-hidden">
+                        </li>
+                        <li class="impressions__slider-slide js-impressions-slide">
+                            <div class="impressions__slide-profile">
+                                <img src="images/impressions-stars.png" alt="rating" class="impressions__stars">
+                                <a href="javascript:;" class="impressions__profile-link">
+                                    <img src="images/impressions-third.png" alt="profile photo"
+                                        class="impressions__profile-photo">
+                                </a>
+                            </div>
+                            <h3 class="impressions__slide-tag">High quality and tasty</h3>
+                            <p class="impressions__slide-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum asperiores commodi
+                                cupiditate fugit sapiente magnam quae quasi quos? Iure similique corporis aut beatae vel
+                                voluptate harum atque quibusdam alias laborum.
+                            </p>
+                        </li>
+                        <li class="impressions__slider-slide js-impressions-slide">
+                            <div class="impressions__slide-profile">
+                                <img src="images/impressions-stars.png" alt="rating" class="impressions__stars">
+                                <a href="javascript:;" class="impressions__profile-link">
+                                    <img src="images/impressions-sixsts.png" alt="profile photo"
+                                        class="impressions__profile-photo">
+                                </a>
+                            </div>
+                            <h3 class="impressions__slide-tag">
+                                Fresh pastry and delicious</h3>
+                            <p class="impressions__slide-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint rerum consectetur
+                                perspiciatis nemo possimus, debitis placeat repellendus dolorum nobis quis iusto
+                                doloribus cumque nisi non nihil iste hic ullam vitae.
+                            </p>
+                        </li>
+                        <li class="impressions__slider-slide js-impressions-slide">
+                            <div class="impressions__slide-profile">
+                                <img src="images/impressions-stars.png" alt="rating" class="impressions__stars">
+                                <a href="javascript:;" class="impressions__profile-link">
+                                    <img src="images/impressions-fourth.png" alt="profile photo"
+                                        class="impressions__profile-photo">
+                                </a>
+                            </div>
+                            <h3 class="impressions__slide-tag">Express delivery</h3>
+                            <p class="impressions__slide-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quisquam aspernatur vitae
+                                tenetur deleniti sint a quasi necessitatibus! Saepe, quas cumque? Est hic assumenda ut
+                                voluptas labore provident ad obcaecati.
+                            </p>
+                        </li>
+                        <li class="impressions__slider-slide js-impressions-slide">
+                            <div class="impressions__slide-profile">
+                                <img src="images/impressions-stars.png" alt="rating" class="impressions__stars">
+                                <a href="javascript:;" class="impressions__profile-link">
+                                    <img src="images/impressions-first.jpg" alt="profile photo"
+                                        class="impressions__profile-photo">
+                                </a>
+                            </div>
+                            <h3 class="impressions__slide-tag">Unexpected quality</h3>
+                            <p class="impressions__slide-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa inventore iusto
+                                praesentium nostrum dignissimos, explicabo molestias accusamus labore iure odio,
+                                consequuntur culpa unde ad ratione, assumenda magnam incidunt iste libero!
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="wrap wrap--primary">
+                <div class="contact__line">
+                    <div class="contact__container">
+                        <img src="images/about-shape.png" alt="shape" class="contact__shape">
+                        <img src="images/contact-image.png" alt="photo of breed" class="contact__image">
+                    </div>
+                    <div class="contact__container">
+                        <div class="contact__text">
+                            <span class="contact__tittle-above above">Get in touch</span>
+                            <h2 class="contact__tittle h2">Contact With Us</h2>
                         </div>
-                    </a>
+                        <div class="contact__information">
+                            <div class="contact__information-holder">
+                                <div class="contact__tag-image">
+                                    <img src="images/contact-location.png" alt="location" class="contact__location">
+                                </div>
+                                <div class="contact__information-text">
+                                    <span class="contact__serial-number">01</span>
+                                    <h3 class="contact__information-tag">Address</h3>
+                                    <a href="javascript:;" class="contact__address-link">
+                                        764 Richardson Rd.
+                                        Bethpage, NY 11714
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact__information-holder">
+                                <div class="contact__tag-image">
+                                    <img src="images/contact-phone.png" alt="phone" class="contact__phone">
+                                </div>
+                                <div class="contact__information-text">
+                                    <span class="contact__serial-number">02</span>
+                                    <h3 class="contact__information-tag">Phone</h3>
+                                    <a href="tel:+4733378901" class="contact__phone-link">
+                                        +4733378901
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__button-holder">
+                            <a href="javascript:;" class="contact__button btn btn--empty">Contact Us</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="wrap wrap--primary">
+            <div class="footer__line">
+                <div class="footer__small-container">
+                    <a href="javascript:;" class="footer__logo-link">
+                        <img src="images/logo.png" alt="logo" class="footer__logo">
+                    </a>
+                </div>
+                <div class="footer__normal-container">
+                    <nav class="footer__navigation">
+                        <div class="footer__navigation-holder">
+                            <span class="footer__navigation-tag">Menu</span>
+                            <ul class="footer__navigation-list">
+                                <li class="footer__navigation-item">
+                                    <a href="javascript:;" class="footer__navigation-link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href="javascript:;" class="footer__navigation-link">
+                                        Products
+                                    </a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href="javascript:;" class="footer__navigation-link">
+                                        Recipes
+                                    </a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href="javascript:;" class="footer__navigation-link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__navigation-holder">
+                            <span class="footer__navigation-tag">Services</span>
+                            <ul class="footer__navigation-list">
+                                <li class="footer__navigation-item">
+                                    <a href="javascript:;" class="footer__navigation-link">
+                                        Bakery
+                                    </a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href="javascript:;" class="footer__navigation-link">
+                                        Delievery
+                                    </a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href="javascript:;" class="footer__navigation-link">
+                                        Catering
+                                    </a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href="javascript:;" class="footer__navigation-link">
+                                        Corporate
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__normal-container">
+                    <form class="footer__form">
+                        <span class="footer__form-tag">Send Us Your Question</span>
+                        <input type="text" class="footer__input js-footer-input" placeholder="Fast Question...">
+                        <button type="button" class="footer__button js-footer-button">Send Message</button>
+                        <p class="footer__form-feedback js-feedback"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

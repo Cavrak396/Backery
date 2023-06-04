@@ -15,18 +15,21 @@
   }
 }
 
-.features__cards-line {
+.features__cards-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  margin: 0 -10px 177px -10px;
+
+  @include phone {
+    margin: 0 -10px 50px -10px;
+  }
 }
 
-.features__card {
+.features__cards-item {
   position: relative;
   margin: 0 10px;
   max-width: calc(33.33% - 20px);
   flex: 1 1 calc(33.33% - 20px);
-  text-decoration: none;
   transition: $normal;
 
   @include hover {
@@ -54,6 +57,10 @@
     flex: 1 1 100%;
     text-align: center;
   }
+}
+
+.features__card {
+  text-decoration: none;
 }
 
 .features__card-inner {
@@ -113,4 +120,145 @@
     line-height: 26px;
     font-size: 14px;
   }
+}
+
+.features__presentation {
+  position: relative;
+  padding: 160px 0 140px 0;
+
+  @include background;
+
+  @include after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0.7;
+    z-index: 1;
+  }
+
+  @include phone {
+    padding: 89px 0 67px 0;
+  }
+}
+
+.features__presentation-line {
+  display: flex;
+
+  @include phone {
+    flex-direction: column-reverse;
+  }
+}
+
+.features__presentation-container {
+  position: relative;
+  max-width: 50%;
+  flex: 1 1 50%;
+  z-index: 10;
+
+  @include phone {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+.features__presentation-container--edit {
+  padding: 14px 0 0 147px;
+
+  @include tablet {
+    padding: 14px 0 0 100px;
+  }
+
+  @include phone {
+    padding: 55px 0 0 0;
+    text-align: center;
+  }
+}
+
+.features__play-button {
+  max-width: 173px;
+  max-height: 173px;
+  cursor: pointer;
+
+  @include hover {
+    .features__play-img {
+      transition: $normal;
+      opacity: 0.7;
+    }
+  }
+
+  @include tablet {
+    max-width: 130px;
+    max-height: 130px;
+  }
+}
+
+.features__play-img {
+  max-width: 100%;
+}
+
+.features__presentation-text {
+  color: $white;
+  padding-left: 14px;
+}
+
+.features__presentation-tittle {
+  @include tablet {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  @include phone {
+    line-height: 44px;
+  }
+}
+
+.features__presentation-above {
+  margin-bottom: 28px;
+}
+
+.features__presentation-video {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $transparent_black;
+}
+
+.features__video {
+  position: absolute;
+  max-width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include tablet {
+    max-width: 100%;
+  }
+}
+
+.features__close-bar {
+  width: 23px;
+  height: 5px;
+  transition: $normal;
+  display: block;
+  background-color: $white;
+
+  &:nth-child(1) {
+    transform: translateY(11px) translateX(-1px) rotate(131deg);
+  }
+
+  &:nth-child(2) {
+    transform: translateY(6px) rotate(45deg);
+  }
+}
+
+.appear {
+  display: block;
 }

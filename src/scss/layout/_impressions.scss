@@ -1,0 +1,114 @@
+.impressions {
+  padding-top: 70px;
+
+  @include phone {
+    padding-top: 45px;
+  }
+}
+
+.impressions__join-text {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.impressions__tittle-above {
+  margin-bottom: 26px;
+}
+
+.impressions__tittle {
+  max-width: 748px;
+  margin: 0 auto;
+}
+
+.impressions__slider {
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.impressions__slider-slides {
+  display: flex;
+  transition: $normal;
+  margin: 0 -20px;
+}
+
+.impressions__slider-slide {
+  margin: 0 20px;
+  min-width: calc(500px - 40px);
+  flex: 1 1 calc(500px - 40px);
+  padding: 49px 52px 40px 33px;
+
+  @include hover {
+    transition: $normal;
+    background-color: $deep_yellow;
+  }
+
+  @include tablet {
+    text-align: center;
+    min-width: calc(400px - 40px);
+    flex: 1 1 calc(400px - 40px);
+  }
+}
+
+.impressions__slide-profile {
+  display: flex;
+  justify-content: space-between;
+
+  @include phone {
+    padding: 0 20px;
+  }
+}
+
+.impressions__stars {
+  max-width: 120px;
+  flex: 1 1 120px;
+  max-height: 24px;
+  margin-top: 23px;
+
+  @include phone {
+    max-width: 104px;
+    flex: 1 1 104px;
+  }
+}
+
+.impressions__profile-photo {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+
+  @include hover {
+    opacity: 0.7;
+    transition: $normal;
+  }
+
+  @include phone {
+    max-width: 65px;
+    flex: 1 1 65px;
+  }
+}
+
+.impressions__slide-tag {
+  font-family: $ultra;
+  font-size: 20px;
+  max-width: 247px;
+  line-height: 25px;
+  margin-bottom: 42px;
+
+  @include small_tablet {
+    font-size: 31px;
+    max-width: 383px;
+  }
+
+  @include phone {
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
+}
+
+.impressions__slide-text {
+  font-size: 18px;
+  line-height: 25px;
+
+  @include phone {
+    font-size: 15px;
+  }
+}

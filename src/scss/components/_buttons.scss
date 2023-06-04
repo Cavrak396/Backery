@@ -18,6 +18,17 @@ button {
   }
 }
 
+.btn--empty {
+  border: $light_black 1px solid;
+  background: none;
+  color: $black;
+
+  @include hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
 .header__button {
   @include phone {
     display: none;
@@ -28,15 +39,6 @@ button {
   display: none;
   @include phone {
     display: inline-block;
-  }
-}
-
-//Add this class letter at HTML!
-.header__close-button {
-  display: none;
-
-  @include phone {
-    display: block;
   }
 }
 
@@ -55,9 +57,52 @@ button {
   align-items: center;
   border: none;
   transition: transform 0.2s ease-in-out;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $dmSans;
+  font-size: 11px;
 
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
+    color: $deep_yellow;
+  }
+}
+
+.features__close-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.process__button {
+  color: $white;
+
+  @include hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.contact__button {
+  margin-left: 60px;
+
+  @include tablet {
+    margin-left: 0;
+  }
+}
+
+.footer__button {
+  color: $white;
+  padding: 10px 11px;
+  border: $white solid 1px;
+  border-radius: 20px;
+
+  @include hover {
+    cursor: pointer;
+    transition: $normal;
+    background-color: $deep_yellow;
+    border: $deep_yellow solid 1px;
   }
 }

@@ -36,7 +36,7 @@
   position: relative;
   max-width: 491px;
   margin: 0 114px 0 auto;
-  z-index: 10;
+  z-index: 30;
   padding: 168px 20px 0 20px;
 
   @include tablet {
@@ -77,20 +77,22 @@
   }
 }
 
-.hero__decoration,
-.hero__text-decoration {
-  position: absolute;
-  z-index: 1;
-}
-
 .hero__decoration {
+  position: fixed;
+  top: 91px;
+  z-index: 20;
   max-width: 188px;
   max-height: 308px;
   left: 0;
-  top: 15px;
+
+  @include tablet {
+    position: absolute;
+  }
 }
 
 .hero__text-decoration {
+  position: absolute;
+  z-index: 1;
   top: 201px;
   right: 145px;
   max-width: 60px;

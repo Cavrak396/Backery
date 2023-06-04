@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 30;
   background-color: $white;
 }
 
@@ -31,7 +31,7 @@
     top: 0;
     left: -100%;
     transition: $normal;
-    height: 100vh;
+    height: 101vh;
     z-index: 50;
   }
 }
@@ -77,6 +77,18 @@
 
   @include phone {
     font-size: 27px;
+  }
+}
+
+.navigation__list-link--close {
+  display: none;
+
+  @include phone {
+    display: block;
+    background-color: $black;
+    color: $white;
+    padding: 5px 15px;
+    border-radius: 20px;
   }
 }
 
